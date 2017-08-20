@@ -1,2 +1,2 @@
 console.log('Loaded!');
-console.prompt("your age?");
+prompt("your age?");
