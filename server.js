@@ -23,8 +23,8 @@ var HTMLtemplate = function (data){
             </head>
             <body>
                 <div>
-                    <a href="/" class = "aStyle"  > Home</a> <a href="/article-one" class = "aStyle" align = "center" >Article One</a><br>
-                    <img src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.0-9/17951946_1377862472300488_5565792766461539071_n.jpg?oh=b0c5e9b456d428a9fe6a343e7f174053&oe=5A0A1A22" class = "img-medium" align = "center"/>
+                    <a href="/" class = "aStyle"  > Home</a> <a href="/article-one" class = "aStyle" align="middle" >Article One</a><br>
+                    <img src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.0-9/17951946_1377862472300488_5565792766461539071_n.jpg?oh=b0c5e9b456d428a9fe6a343e7f174053&oe=5A0A1A22" class = "img-medium" align="middle"/>
                 </div>    
                 <hr>
                 <div align = "right">${date}</div>
