@@ -1,4 +1,4 @@
-var button = document.getElementById("c");
+var button = document.getElementById("co");
 button.onClick = function(){
     var reqt = new XMLHttpRequest();
     reqt.onreadystatechange=function(){
