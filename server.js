@@ -30,7 +30,7 @@ var HTMLtemplate = function (data){
                 <div align = "center">${content}</div>
             </body>
         </html>`;
-    return creatTemplate;    
+    return createTemplate;    
 };
 
 
