@@ -5,11 +5,11 @@ var express = require('express');
  app.use(morgan('combined'));
  
  
- var article-one = {
-     title = 'Article-One';
-     date = 'september 1 1999';
-     content = `<p>I was born at this date.<br> Iam 17 years yet.</p>`;
- }
+ var articleOne = {
+     title: 'Article-One',
+     date: 'september 1 1999',
+     content: `<p>I was born at this date.<br> Iam 17 years yet.</p>`
+ };
 
 var HTMLtemplate = function (data){
     var title = data.title;
