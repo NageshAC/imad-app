@@ -22,7 +22,7 @@ var HTMLtemplate = function (data){
                 <meta name = "viewport" content = "width-device-width,initial-scale-1"/>
             </head>
             <body>
-            <a href="/" > Home</a>
+            <a href="/" class = "aStyle"  > Home</a>
                 <img src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.0-9/17951946_1377862472300488_5565792766461539071_n.jpg?oh=b0c5e9b456d428a9fe6a343e7f174053&oe=5A0A1A22" class = "img-medium"/>
                 <hr>
                 <div align = "right">${date}</div>
