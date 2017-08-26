@@ -18,11 +18,11 @@ var HTMLtemplate = function (data){
     var createTemplate = `
         <html>
             <head> <title> ${title}</title> 
-                <link href = "/ui/style.css" rel = "stylesheet"/><br>
+                <link href = "/ui/style.css" rel = "stylesheet"/>
                 <meta name = "viewport" content = "width-device-width,initial-scale-1"/>
             </head>
             <body>
-            <a href="/" class = "aStyle"  > Home</a>
+            <a href="/" class = "aStyle"  > Home</a><br>
                 <img src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.0-9/17951946_1377862472300488_5565792766461539071_n.jpg?oh=b0c5e9b456d428a9fe6a343e7f174053&oe=5A0A1A22" class = "img-medium"/>
                 <hr>
                 <div align = "right">${date}</div>
