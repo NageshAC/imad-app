@@ -1,9 +1,38 @@
 var express = require('express');
  var morgan = require('morgan');
  var path = require('path');
- 
  var app = express();
  app.use(morgan('combined'));
+ 
+ 
+ var article-one = {
+     title = 'Article-One';
+     date = 'september 1 1999';
+     content = `<p>I was born at this date.<br> Iam 17 years yet.</p>`;
+ }
+
+var HTMLtemplate = function (data){
+    var title = data.title;
+    var date = data.date;
+    var content = data.content;
+    var createTemplate = `
+        <html>
+            <head> <title> ${title}</title> 
+                <link href = "/ui/style.css" rel = "stylesheet"/>
+                <meta name = "viewport" content = "width-device-width,initial-scale-1"/>
+            </head>
+            <body>
+            <a href="/" > Home</a>
+                <img src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.0-9/17951946_1377862472300488_5565792766461539071_n.jpg?oh=b0c5e9b456d428a9fe6a343e7f174053&oe=5A0A1A22" class = "img-medium"/>
+                <hr>
+                <div align = "right">${date}</div>
+                <hr>
+                <div align = "center">${content}</div>
+            </body>
+        </html>`;
+};
+
+
  
  app.get('/', function (req, res) {
    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -20,6 +49,7 @@ var express = require('express');
  app.get('/ui/main.js', function (req,res){
      res.sendFile(path.join(__dirname, 'ui', 'main.js'));
  });
+ 
  
  
  
