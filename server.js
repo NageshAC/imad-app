@@ -61,7 +61,8 @@ var htmlCreateSignup = function (data){
             <DIV>
                 <H3>Choose your email id :</H3>
                 
-                    <INPUT TYPE="text" PLACEHOLDER = "@nac.com" > 
+                    <INPUT TYPE="text" PLACEHOLDER = "                                  
+                                                  @nac.com" > 
                 
             </DIV>
             
