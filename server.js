@@ -40,7 +40,7 @@ var htmlCreateSignup = function (data){
         <HEAD>
         <BODY>
             <DIV ALIGN = left><A HREF = "/">Home</A></DIV>
-            <DIV CLASS = "center text-big bold">${type}<DIV>
+            <DIV CLASS = "center text-big bold">${type}</DIV>
             <DIV><h1>Personal Details</h1></DIV>
             
             
