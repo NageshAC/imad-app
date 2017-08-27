@@ -60,9 +60,9 @@ var htmlCreateSignup = function (data){
             </DIV>
             <DIV>
                 <H3>Choose your email id :</H3>
-                <DIV>
+                
                     <INPUT TYPE="number" PLACEHOLDER = "@nac.com" MIN = "8"> 
-                </DIV>
+                
             </DIV>
             
         </BODY>
