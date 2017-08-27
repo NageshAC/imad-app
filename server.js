@@ -14,8 +14,9 @@ var express = require('express');
             <link href="/ui/style.css" rel="stylesheet">
             </HEAD>
             <BODY>
+                <DIV ALIGN = left><A HREF = "/">Home</A></DIV>
                 <DIV CLASS = "center text-big bold">
-                    NAC ${type}
+                    ${type}
                 </DIV>
                 <DIV ALIGN = "middle">
                     <INPUT TYPE = "text" ID = "username" PLACEHOLDER = "username"/>
@@ -26,7 +27,26 @@ var express = require('express');
             </BODY>
         </HTML>
              `;
-}
+             return htmlTemplate;
+};
+
+var logon = {
+    title: 'NAC Logon',
+    type: 'NAC LOGON'
+};
+
+var login = {
+    title: 'NAC Login',
+    type: 'NAC LOGIN'
+};
+
+app.get ('/logon', function (req,res){
+   res.send(htmlCreate(logon)); 
+});
+
+app.get('/login', function (req,res){
+    res.send(htmlCreate(login));
+});
 
  
  app.get('/', function (req, res) {
