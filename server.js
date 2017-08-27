@@ -4,7 +4,7 @@ var express = require('express');
  var app = express();
  app.use(morgan('combined'));
  
- var htmlCreateLogin = function (data){
+ var htmlCreateLSignin = function (data){
     var title = data.title;
     var type = data.type;
     var htmlTemplate = `
@@ -29,7 +29,7 @@ var express = require('express');
              `;
              return htmlTemplate;
 };
-var htmlCreateLogon = function (data){
+var htmlCreateSignup = function (data){
   var title = data.title;
   var type = data.type;
   var htmlTemplate = `
@@ -56,16 +56,16 @@ var logon = {
 };
 
 var login = {
-    title: 'NAC Login',
-    type: 'NAC LOGIN'
+    title: 'NAC Signin',
+    type: 'NAC SIGNIN'
 };
 
-app.get ('/logon', function (req,res){
-   res.send(htmlCreateLogon(logon)); 
+app.get ('/signup', function (req,res){
+   res.send(htmlCreateLogon(signup)); 
 });
 
-app.get('/login', function (req,res){
-    res.send(htmlCreateLogin(login));
+app.get('/signin', function (req,res){
+    res.send(htmlCreateLogin(signin));
 });
 
  
