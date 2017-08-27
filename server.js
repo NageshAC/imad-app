@@ -4,7 +4,7 @@ var express = require('express');
  var app = express();
  app.use(morgan('combined'));
  
- var htmlCreate = function (data){
+ var htmlCreateLogin = function (data){
     var title = data.title;
     var type = data.type;
     var htmlTemplate = `
@@ -29,6 +29,26 @@ var express = require('express');
              `;
              return htmlTemplate;
 };
+var htmlCreateLogon = function (data){
+  var title = data.title;
+  var type = data.type;
+  var htmlTemplate = `
+  <HTML>
+        <HEAD>
+            <LINK HREF = "/ui/style.css" REL = "stylesheet">
+            <TITLE>${title}</TITLE>
+        <HEAD>
+        <BODY>
+            <DIV ALIGN = left><A HREF = "/">Home</A></DIV>
+            <DIV CLASS = "center text-bog bold">${type}<DIV>
+            <DIV CLASS = "text-big bold">Personal Details</DIV>
+            
+            
+        </BODY>
+  </HTML>
+  `;
+  return htmlTemplate;
+};
 
 var logon = {
     title: 'NAC Logon',
@@ -41,11 +61,11 @@ var login = {
 };
 
 app.get ('/logon', function (req,res){
-   res.send(htmlCreate(logon)); 
+   res.send(htmlCreateLogon(logon)); 
 });
 
 app.get('/login', function (req,res){
-    res.send(htmlCreate(login));
+    res.send(htmlCreateLogin(login));
 });
 
  
