@@ -50,6 +50,14 @@ var htmlCreateSignup = function (data){
                     <INPUT TYPE="text" PLACEHOLDER = "Last Name"> 
                 </DIV>
             </DIV>
+            <DIV>
+                <H3>Birthday</H3>
+                <DIV>
+                    <INPUT TYPE="number" PLACEHOLDER = "Year" MAX = "4"> 
+                    <INPUT TYPE="text" PLACEHOLDER = "Month" MAX = "2">
+                    <INPUT TYPE="text" PLACEHOLDER = "Day" MAX = "2"> 
+                </DIV>
+            </DIV>
             
         </BODY>
   </HTML>
