@@ -61,11 +61,11 @@ var login = {
 };
 
 app.get ('/signup', function (req,res){
-   res.send(htmlCreateLogon(signup)); 
+   res.send(htmlCreateSignup(signup)); 
 });
 
 app.get('/signin', function (req,res){
-    res.send(htmlCreateLogin(signin));
+    res.send(htmlCreateSignin(signin));
 });
 
  
@@ -85,9 +85,6 @@ app.get('/signin', function (req,res){
      res.sendFile(path.join(__dirname, 'ui', 'main.js'));
  });
  
- app.get('/article-one', function (req,res){
-    res.send(HTMLtemplate(articleOne)); 
- });
  
  
  var port = 80; // Use 8080 for local development because you might already have apache running on 80
