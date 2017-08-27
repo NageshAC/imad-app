@@ -51,14 +51,16 @@ var htmlCreateSignup = function (data){
                 </DIV>
             </DIV>
             <DIV>
-                <H3>Birthday</H3>
+                <H3>Birthday:</H3>
                 <DIV>
                     <INPUT TYPE="number" PLACEHOLDER = "Year" MAX = "4"> 
                     <INPUT TYPE="text" PLACEHOLDER = "Month" MAX = "2">
                     <INPUT TYPE="text" PLACEHOLDER = "Day" MAX = "2"> 
                 </DIV>
             </DIV>
-            
+            <DIV>
+                <H3>Choose your email id :</H3><H8>*</H8>
+            </DIV>
         </BODY>
   </HTML>
   `;
