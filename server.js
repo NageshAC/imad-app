@@ -59,7 +59,7 @@ var htmlCreateSignup = function (data){
                 </DIV>
             </DIV>
             <DIV>
-                <H3>Choose your email id :</H3><H8>*</H8>
+                <H3>Choose your email id :   *</H3>
             </DIV>
         </BODY>
   </HTML>
