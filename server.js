@@ -45,9 +45,9 @@ var htmlCreateSignup = function (data){
             <DIV>
                 <H3>Name:</H3>
                 <DIV>
-                    <INPUT TYPE="text" PLACEHOLDER = "First Name"> <H3 COLOR = red>*</H3>
+                    <INPUT TYPE="text" PLACEHOLDER = "First Name"> 
                     <INPUT TYPE="text" PLACEHOLDER = "Middle Name">
-                    <INPUT TYPE="text" PLACEHOLDER = "Last Name"> <H3 COLOR = red>*</H3>
+                    <INPUT TYPE="text" PLACEHOLDER = "Last Name"> 
                 </DIV>
             </DIV>
             
