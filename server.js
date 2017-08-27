@@ -4,7 +4,7 @@ var express = require('express');
  var app = express();
  app.use(morgan('combined'));
  
- var htmlCreateLSignin = function (data){
+ var htmlCreateSignin = function (data){
     var title = data.title;
     var type = data.type;
     var htmlTemplate = `
