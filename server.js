@@ -50,12 +50,12 @@ var htmlCreateSignup = function (data){
   return htmlTemplate;
 };
 
-var logon = {
+var signup = {
     title: 'NAC Logon',
     type: 'NAC LOGON'
 };
 
-var login = {
+var signin = {
     title: 'NAC Signin',
     type: 'NAC SIGNIN'
 };
