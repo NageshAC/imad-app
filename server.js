@@ -4,36 +4,29 @@ var express = require('express');
  var app = express();
  app.use(morgan('combined'));
  
- 
- var articleOne = {
-     title: 'Article-One',
-     date: 'september 1 1999',
-     content: `<p>I was born at this date.<br> Iam 17 years yet.</p>`
- };
-
-var HTMLtemplate = function (data){
+ var htmlCreate = function (data){
     var title = data.title;
-    var date = data.date;
-    var content = data.content;
-    var createTemplate = `
-        <html>
-            <head> <title> ${title}</title> 
-                <link href = "/ui/style.css" rel = "stylesheet"/>
-            </head>
-            <body>
-                <div>
-                    <a href="/" class = "aStyle"  > Home</a> <a href="/article-one" class = "aStyle" align="middle" >Article One</a><br>
-                    <img src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.0-9/17951946_1377862472300488_5565792766461539071_n.jpg?oh=b0c5e9b456d428a9fe6a343e7f174053&oe=5A0A1A22" class = "img-medium" align="middle"/>
-                </div>    
-                <hr>
-                <div align = "right">${date}</div>
-                <hr>
-                <div align = "center">${content}</div>
-            </body>
-        </html>`;
-    return createTemplate;    
-};
-
+    var type = data.type;
+    var htmlTemplate = `
+        <HTML>
+            <HEAD>
+            <TITLE>${title}</TITLE>
+            <link href="/ui/style.css" rel="stylesheet">
+            </HEAD>
+            <BODY>
+                <DIV CLASS = "center text-big bold">
+                    NAC ${type}
+                </DIV>
+                <DIV ALIGN = "middle">
+                    <INPUT TYPE = "text" ID = "username" PLACEHOLDER = "username"/>
+                    <INPUT TYPE = "password" ID = "password" PLACEHOLDER = "password"/>
+                    <BUTTON ID = "submit">Submit</BUTTON>
+                </DIV>
+        
+            </BODY>
+        </HTML>
+             `;
+}
 
  
  app.get('/', function (req, res) {
