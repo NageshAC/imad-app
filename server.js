@@ -66,7 +66,7 @@ var htmlCreateSignup = function (data){
                 
             </DIV>
             <DIV>
-                <H3></H3>
+                <H3>Select your password wisely:</H3>
                 <INPUT TYPE="password" PLACEHOLDER="Password">
                 <BR>
                 <INPUT TYPE="password" PLACEHOLDER="Confirm Password">
