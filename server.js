@@ -129,9 +129,9 @@ app.get ('/signup', function (req,res){
    res.send(htmlCreateSignup(signup)); 
 });
 
-app.get('/signin', function (req,res){
+/*app.get('/signin', function (req,res){
     res.send(htmlCreateSignin(signin));
-});
+});*/
 
  
  app.get('/', function (req, res) {
