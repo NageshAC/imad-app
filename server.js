@@ -65,6 +65,12 @@ var htmlCreateSignup = function (data){
                                                   @nac.com" > 
                 
             </DIV>
+            <DIV>
+                <H3></H3>
+                <INPUT TYPE="password" PLACEHOLDER="Password">
+                <BR>
+                <INPUT TYPE="password" PLACEHOLDER="Confirm Password">
+            </DIV>
             
         </BODY>
   </HTML>
