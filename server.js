@@ -19,9 +19,9 @@ var express = require('express');
                     ${type}
                 </DIV>
                 <DIV ALIGN = "middle">
-                    <INPUT TYPE = "text" ID = "username" PLACEHOLDER = "username"/>
-                    <INPUT TYPE = "password" ID = "password" PLACEHOLDER = "password"/>
-                    <BUTTON ID = "submit">Submit</BUTTON>
+                    <INPUT TYPE = "text" ID = "signin_username" PLACEHOLDER = "username"/>
+                    <INPUT TYPE = "password" ID = "signin_password" PLACEHOLDER = "password"/>
+                    <BUTTON ID = "signin_submit">Submit</BUTTON>
                 </DIV>
         
             </BODY>
@@ -45,31 +45,34 @@ var htmlCreateSignup = function (data){
             <DIV>
                 <H3>Name:</H3>
                 <DIV>
-                    <INPUT TYPE="text" PLACEHOLDER = "First Name"> 
-                    <INPUT TYPE="text" PLACEHOLDER = "Middle Name">
-                    <INPUT TYPE="text" PLACEHOLDER = "Last Name"> 
+                    <INPUT TYPE="text" ID = "first_name" PLACEHOLDER = "First Name"> 
+                    <INPUT TYPE="text" ID = "middle_name" PLACEHOLDER = "Middle Name">
+                    <INPUT TYPE="text" ID = "last_name" PLACEHOLDER = "Last Name"> 
                 </DIV>
             </DIV>
             <DIV>
                 <H3>Birthday:</H3>
                 <DIV>
-                    <INPUT TYPE="number" PLACEHOLDER = "Year"> 
-                    <INPUT TYPE="text" PLACEHOLDER = "Month">
-                    <INPUT TYPE="text" PLACEHOLDER = "Day" > 
+                    <INPUT TYPE="number" ID = "year" PLACEHOLDER = "Year"> 
+                    <INPUT TYPE="number" ID = "month" PLACEHOLDER = "Month">
+                    <INPUT TYPE="number" ID = "day" PLACEHOLDER = "Day" > 
                 </DIV>
             </DIV>
             <DIV>
                 <H3>Choose your email id :</H3>
                 
-                    <INPUT TYPE="text" STYLE = "width:400px" PLACEHOLDER = "                                  
+                    <INPUT TYPE="text" ID = "signup_username" STYLE = "width:400px" PLACEHOLDER = "                                  
                                                   @nac.com" > 
                 
             </DIV>
             <DIV>
                 <H3>Select your password wisely:</H3>
-                <INPUT TYPE="password" PLACEHOLDER="Password">
+                <INPUT TYPE="password" ID = "signup_password" PLACEHOLDER="Password">
                 <BR><BR>
-                <INPUT TYPE="password" PLACEHOLDER="Confirm Password">
+                <INPUT TYPE="password" ID = "signin_password" PLACEHOLDER="Confirm Password">
+            </DIV>
+            <DIV>
+            <BUTTON ID = "signup_submit">Submit</BUTTON>
             </DIV>
             
         </BODY>
