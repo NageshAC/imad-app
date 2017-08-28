@@ -71,6 +71,7 @@ var htmlCreateSignup = function (data){
                 <BR><BR>
                 <INPUT TYPE="password" ID = "signin_password" PLACEHOLDER="Confirm Password">
             </DIV>
+            <BR>
             <DIV>
             <BUTTON ID = "signup_submit">Submit</BUTTON>
             </DIV>
