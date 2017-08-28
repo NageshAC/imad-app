@@ -100,7 +100,7 @@ var signin = {
     type: 'NAC SIGNIN'
 };
 
-var pool = new Pool(config);
+/*var pool = new Pool(config);
 app.get('/signin', function (req,res){
     var submit = document.getElementById('signin_submit');
     var username = document.getElementById('signin_username');
@@ -123,15 +123,15 @@ app.get('/signin', function (req,res){
                 
             }
     });
-});
+});*/
 
 app.get ('/signup', function (req,res){
    res.send(htmlCreateSignup(signup)); 
 });
 
-/*app.get('/signin', function (req,res){
+app.get('/signin', function (req,res){
     res.send(htmlCreateSignin(signin));
-});*/
+});
 
  
  app.get('/', function (req, res) {
