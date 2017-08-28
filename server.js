@@ -91,8 +91,8 @@ var htmlCreateSignup = function (data){
 };
 
 var signup = {
-    title: 'NAC Logon',
-    type: 'NAC LOGON'
+    title: 'NAC Signup',
+    type: 'NAC SIGNUP'
 };
 
 var signin = {
