@@ -6,10 +6,10 @@ app.use(morgan('combined'));
 var Pool = require('pg');
 
 var config = {
-   host:'db.imad.hasura.io'
-   user:'acnagesh481'
-   password:'process.env.DB_PASSWORD'
-   port:'5432'
+   host:'db.imad.hasura.io',
+   user:'acnagesh481',
+   password:'process.env.DB_PASSWORD',
+   port:'5432',
    database:'acnagesh481'
 };
 var pool = new Pool(config);
