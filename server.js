@@ -1,15 +1,9 @@
 var express = require('express');
  var morgan = require('morgan');
- var path = require('path');
+ 
  var app = express();
  var Pool = require('pg');
- var config = {
-     host:'db.imad.hasura-app.io',
-     user:'acnagesh481',
-     database:'acnagesh481',
-     port: '5432',
-     password:process.env.DB_PASSWORD
- };
+ 
  app.use(morgan('combined'));
  
  var htmlCreateSignin = function (data){
@@ -100,30 +94,7 @@ var signin = {
     type: 'NAC SIGNIN'
 };
 
-var pool = new Pool(config);
-app.get('/signin', function (req,res){
-    var submit = document.getElementById('signin_submit');
-    var username = document.getElementById('signin_username');
-    var password = document.getElementById('signin_password');
-    var comp = NULL;
-    
-    pool.query("select 'useranme' from NAC_signup " , function (err,result){
-            if(err){
-                res.status(500).send(err);
-            }else{
-                for(var i=0;i<50;i++){
-                    if (result[i]===username){
-                        comp = result[i];
-                    }
-                }
-                if (comp === NULL){
-                    res.send("the username does not exits");
-                }
-                
-                
-            }
-    });
-});
+
 
 app.get ('/signup', function (req,res){
    res.send(htmlCreateSignup(signup)); 
