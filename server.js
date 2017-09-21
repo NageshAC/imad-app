@@ -2,6 +2,17 @@ var express = require('express');
 var morgan = require('morgan');
 var app = express();
 app.use(morgan('combined'));
+
+var Pool = require('pg');
+
+var config = {
+   host:'db.imad.hasura.io'
+   user:'acnagesh481'
+   password:'process.env.DB_PASSWORD'
+   port:'5432'
+   database:'acnagesh481'
+};
+var pool = new Pool(config);
  
  var htmlCreateSignin = function (data){
     var title = data.title;
@@ -117,6 +128,16 @@ app.get('/signin', function (req,res){
  app.get('/ui/main.js', function (req,res){
      res.sendFile(path.join(__dirname, 'ui', 'main.js'));
  });
+
+app.get('/test-db', function(req res){
+   pool.query(select * from test, function(err,result){
+   if(err){
+	res.status(550).send(err.toString());
+   }else{
+	res.send(JSON.stringify(result));
+    }
+   });
+});
  
  
  
