@@ -129,8 +129,8 @@ app.get('/signin', function (req,res){
      res.sendFile(path.join(__dirname, 'ui', 'main.js'));
  });
 
-app.get('/test-db', function(req res){
-   pool.query(select * from test, function(err,result){
+app.get('/test-db', function(req, res){
+   pool.query('SELECT * FROM test', function(err,result){
    if(err){
 	res.status(550).send(err.toString());
    }else{
