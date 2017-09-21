@@ -2,7 +2,7 @@ var express = require('express');
  var morgan = require('morgan');
  var path = require('path');
  var app = express();
- var Pool = require('pg').Pool;
+ var Pool = require('pg');
  var config = {
      host:'db.imad.hasura-app.io',
      user:'acnagesh481',
@@ -100,7 +100,7 @@ var signin = {
     type: 'NAC SIGNIN'
 };
 
-/*var pool = new Pool(config);
+var pool = new Pool(config);
 app.get('/signin', function (req,res){
     var submit = document.getElementById('signin_submit');
     var username = document.getElementById('signin_username');
@@ -123,7 +123,7 @@ app.get('/signin', function (req,res){
                 
             }
     });
-});*/
+});
 
 app.get ('/signup', function (req,res){
    res.send(htmlCreateSignup(signup)); 
