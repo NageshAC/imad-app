@@ -1,10 +1,7 @@
 var express = require('express');
- var morgan = require('morgan');
- 
- var app = express();
- var Pool = require('pg');
- 
- app.use(morgan('combined'));
+var morgan = require('morgan');
+var app = express();
+app.use(morgan('combined'));
  
  var htmlCreateSignin = function (data){
     var title = data.title;
